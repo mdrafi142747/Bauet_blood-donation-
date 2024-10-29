@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauet Blood Donation Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: crimson;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .register-form input, .register-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .register-form button {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .register-form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bauet Blood Donation Group</h1>
+        <p>Donate blood, save lives!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#register">Register as a Donor</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#dashboard">&#128200; Dashboard</a></li> <!-- Dashboard icon using HTML character -->
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="section">
+            <h2>Welcome to Bauet Blood Donation Group</h2>
+            <p>We aim to connect donors and recipients to make blood donation easier and accessible for everyone.</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Our mission is to save lives by promoting blood donation and providing a platform where individuals can register as donors or request for blood in case of emergencies.</p>
+        </section>
+
+        <section id="register" class="section">
+            <h2>Register as a Blood Donor</h2>
+            <form class="register-form" action="submit_registration.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="bloodgroup">Blood Group:</label>
+                <input type="text" id="bloodgroup" name="bloodgroup" placeholder="Your blood group" required>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Your department" required>
+
+                <label for="batch">Batch:</label>
+                <input type="text" id="batch" name="batch" placeholder="Your batch" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Your phone number" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Your address" required></textarea>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any queries or need assistance, feel free to contact us.</p>
+            <p>Phone: 016*********</p>
+            <p>Email: bauetblooddonation@gmail.com</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bauet Blood Donation Group | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
